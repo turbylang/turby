@@ -1,0 +1,13 @@
+include (
+  "requests"
+)
+
+function send_request(val) {
+  if (val == 1) {
+    req = requests.get("https://www.example.com/")
+    print(req.text)
+    print(req.status)
+  }
+}
+
+send_request(val)
